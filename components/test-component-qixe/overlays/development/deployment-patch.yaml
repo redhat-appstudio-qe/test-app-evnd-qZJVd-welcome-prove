@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-qixe
+  namespace: build-e2e-prnm-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:8350d4cc0028e407b331ca63fb93fc0cc25166b3fe894c7ed00425df894af5c1
+        name: my-python
+        resources: {}
+status: {}
